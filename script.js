@@ -2,6 +2,13 @@
 var btn = document.querySelector('#mode');
 var span = document.querySelector('span');
 
+//savoir dernier theme à l'arrivée de l'user
+if(localStorage.getItem('theme')){
+    if(localStorage.getItem('theme') === 'sombre') {
+        modeSombre();
+    }
+}
+
 //fonction du bouton
 btn.addEventListener('click',()=>{
     //récupération des class du body
