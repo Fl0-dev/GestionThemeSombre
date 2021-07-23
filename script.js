@@ -15,3 +15,8 @@ btn.addEventListener('click',()=>{
         modeSombre();
     }
 })
+function modeSombre() {
+    document.body.classList.add('dark');
+    span.textContent ="Thème clair";
+    localStorage.setItem('theme','sombre');
+}
